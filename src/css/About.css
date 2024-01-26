@@ -1,0 +1,43 @@
+/* Home.css */
+.flex-container {
+    display: flex;
+    justify-content: space-between; /* Adjust alignment as needed */
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+  }
+  
+  .flex-item {
+    flex: 1;
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+    background-color: aquamarine;
+    margin: 5px; /* Adjust margin between items as needed */
+    box-sizing: border-box; /* Include padding and border in the box model */
+  
+    /* Responsive Styles */
+    @media (max-width: 767px) {
+      /* Styles for mobile devices */
+      flex-basis: calc(100% - 10px); /* Full width, minus margin */
+    }
+  
+    @media (min-width: 768px) and (max-width: 1023px) {
+      /* Styles for tablets */
+      flex-basis: calc(50% - 10px); /* Two items per row, minus margin */
+    }
+  
+    @media (min-width: 1024px) and (max-width: 1439px) {
+      /* Styles for laptops */
+      flex-basis: calc(33.33% - 10px); /* Three items per row, minus margin */
+    }
+  
+    @media (min-width: 1440px) {
+      /* Styles for larger screens */
+      flex-basis: calc(16.6667% - 10px); /* Six items per row, minus margin */
+    }
+    
+    @media (max-width: 1023px) {
+      /* Styles for smaller screens - change flex direction to column */
+      flex-basis: calc(100% - 10px); /* Full width, minus margin */
+    }
+  }
+  

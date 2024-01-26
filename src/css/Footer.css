@@ -1,0 +1,103 @@
+/* Footer.css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+footer {
+  background: #10182f;
+  color: white;
+}
+
+.content {
+  max-width: 1250px;
+  margin: auto;
+  padding: 30px 40px 40px 40px;
+}
+
+.link-boxes {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.box {
+  width: calc(100% / 5 - 10px);
+}
+
+.link_name {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+/* Remove the lines */
+.link_name::before {
+  content: "";
+  display: none; /* Set display to none to remove the lines */
+}
+
+.box ul {
+  list-style: none;
+}
+
+.box ul li {
+  margin: 6px 0;
+}
+
+.box ul li a {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  opacity: 0.8;
+  transition: all 0.4s ease;
+}
+
+.box ul li a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.input-box {
+  margin-right: 55px;
+}
+
+.input-box input {
+  height: 40px;
+  width: calc(100% + 55px);
+  outline: none;
+  border: 2px solid #afafb6;
+  border-radius: 4px;
+  padding: 0 15px;
+  font-size: 15px;
+  color: white;
+  margin-top: 5px;
+}
+
+.input-box input::placeholder {
+  color: white;
+  font-size: 16px;
+}
+
+.input-box input[type="button"] {
+  background: #fff;
+  color: red;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 4px 0;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.input-box input[type="button"]:hover {
+  opacity: 1;
+}

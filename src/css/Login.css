@@ -1,0 +1,50 @@
+/* Login.css */
+.login-container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  
+    /* Gradient Background */
+    background: linear-gradient(to bottom, #2ecc71, #3498db);
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-label {
+    margin-bottom: 10px;
+  }
+  
+  .form-input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .login-button,
+  .signup-button {
+    background-color: #fff; /* Change button background color */
+    color: #3498db; /* Change button text color */
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .signup-button {
+    margin-top: 5px;
+  }
+  
+  /* Error Message Style */
+  .error-message {
+    color: #e74c3c;
+    margin-bottom: 10px;
+  }
+ 
